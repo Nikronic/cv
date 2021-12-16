@@ -100,7 +100,7 @@
 \lhead{}
 \chead{\small{$\cdot$ ORCID: 0000-0001-9152-8094  $\cdot$  
 	\textcolor{sectcol}{\textbf{\href{mailto:nikan.doosti@outlook.com}{nikan.doosti@outlook.com}}}  $\cdot$ 
-	\textcolor{sectcol}{\textbf{\href{nikronic.github.io}{nikronic.github.io}}} $\cdot$
+	\textcolor{sectcol}{\textbf{\href{https://nikronic.github.io}{nikronic.github.io}}} $\cdot$
 	}}
 \rhead{}
 
@@ -251,20 +251,22 @@
 % param 4:	description/summary
 % param 5:	some words about your contributions in list form
 %
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \newcommand{\cvevent}[4]
 {
+	\vspace{8pt}
 
-	\vspace{8pt}		
-	\begin{tabular*}{1\textwidth}{p{4.6cm}  p{5.7cm} x{6.6cm}}
- 				\textcolor{bgcol}{#1}& \textbf{#2} & \vspace{3.0pt}{\textbf{#3}}
-	\end{tabular*}
-	\vspace{-12pt}
+    \begin{tabular*}{1\textwidth}{P{4.6cm} P{5.7cm} P{6.6cm}}
+        \textcolor{bgcol}{#1}& \textbf{#2} & 
+        {\textbf{#3}}
+    \end{tabular*}
+    
+	\vspace{-9pt}
 	\textcolor{softcol}{\hrule}
 	\vspace{6pt}
 	{#4}
 	\vspace{6pt}
 }
-
 
 % creates a list with left-arrows for show-casing the works done in a "cvevent" command
 % 
@@ -320,7 +322,7 @@
 %}}
 
 % use this for single words, e.g. CV or RESUME etc.
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Nikan Doosti}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Nikan Doosti}} }\textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
 
 
 %----------------------------------------------------------------------------------------
@@ -351,8 +353,7 @@
 \metasection{Status:}{M.Sc. Computer Engineering, Artificial Intelligence}
 \metasection{Tech:}{Python, PyTorch, Scipy/Numpy, C++}
 \metasection{Fields:}{Deep Learning, Computational Fabrication, Visual Computing, Computer Graphics}
-
-\vspace{18pt}  % 6pt+12pt (from line space of metasection command)
+\vspace{12pt}  % 6pt+12pt (from line space of metasection command)
 
 %---------------------------------------------------------------------------------------
 %	SUMMARAY (optional)
@@ -386,7 +387,7 @@ My responsibilities:
 	\cveventitem{Implementing and reproducing results of the main references}
 	\cveventitem{Developing a new system to solve TO in fully self-supervised manner via neural fields}
 \end{itemize}
-Supervisor: \href{https://cam.mpi-inf.mpg.de/?view=people_vahid}{\underline{Dr. Vahid Babaei}} (Computational manufacturing researcher at Max Planck Institute for Informatics and group leader at \href{https://cam.mpi-inf.mpg.de/?view=home}{\underline{CAM group}})
+Supervisor: \href{https://cam.mpi-inf.mpg.de/?view=people_vahid}{\underline{Dr. Vahid Babaei}} (Computational manufacturing researcher at Max Planck Institute for Informatics and group leader at \href{https://cam.mpi-inf.mpg.de/?view=home}{\underline{CAM} group})
 \vspace{12pt}
 
 %
@@ -435,7 +436,7 @@ Awards:
 %--------------------------------------------------------------------------------------------------
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{https://nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{https://github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
 
 
 % start of new page, end of "artificial footer" - cont. section education
@@ -466,7 +467,7 @@ My primary responsibilities as the TA were assessing and designing assignments a
 
 
 %
-\cvevent{Aug, 2019 - Present}{MSc Computer Engineering}{Iran University of Science and Technology}{}
+\cvevent{Aug, 2019 - Present}{MSc Computer Engineering}{Iran University of Sc. and Tech. (IUST)}{}
 
 Awards:
 \begin{itemize}
@@ -487,20 +488,20 @@ Supervisor: \href{http://webpages.iust.ac.ir/mozayani/}{\underline{Dr. Nasser Mo
 \cvsection{Voluntary Activities}
 
 %
-\cvevent{Oct, 2018 - Present}{Lecturer}{Rasht School of AI (\href{schoolofai.ir}{\underline{schoolofai.ir}})}{School of AI is a community of passionate people about learning and teaching AI, mostly enabled by students from different fields of study. In this community, we would like to personalize learning paths and create a network to learn more about machine learning and deep learning and their applications. All sessions are free and recordings are available publicly.\\
-You can find the material here: \href{github.com/rasht-school-of-ai}{\underline{github.com/rasht-school-of-ai}}}
+\cvevent{Oct, 2018 - Present}{Lecturer}{Rasht School of AI (\href{http://schoolofai.ir}{schoolofai.ir})}{School of AI is a community of passionate people about learning and teaching AI, mostly enabled by students from different fields of study. In this community, we would like to personalize learning paths and create a network to learn more about machine learning and deep learning and their applications. All sessions are free and recordings are available publicly.\\
+You can find the material here: \href{https://github.com/rasht-school-of-ai}{\underline{github.com/rasht-school-of-ai}}}
 \vspace{12pt}
 
 
 %
-\cvevent{Sep, 2020- Aug, 2021}{Maintainer and Developer}{IUST Projects (\href{iust-projects.ir}{\underline{iust-projects.ir}})}{IUST Projects is an open GitHub organization with a focus on showcasing and maintaining projects created at Iran University of Science and Technology. This website and its \emph{organization is maintained by its true owners, the students} and the contributors outside of the university, so no, this is not an official university website and it is open to anybody who wants to join! \emph{(Failed!)}\\
-You can find all the materials here: \href{github.com/iust-projects}{\underline{github.com/iust-projects}}}
+\cvevent{Sep, 2020- Aug, 2021}{Maintainer and Developer}{IUST Projects (\href{http://iust-projects.ir}{iust-projects.ir})}{IUST Projects is an open GitHub organization with a focus on showcasing and maintaining projects created at Iran University of Science and Technology. This website and its \emph{organization is maintained by its true owners, the students} and the contributors outside of the university, so no, this is not an official university website and it is open to anybody who wants to join! \emph{(Failed!)}\\
+You can find all the materials here: \href{https://github.com/iust-projects}{\underline{github.com/iust-projects}}}
 
 Main works:
 \begin{itemize}
 	\itemsep -0.2em
 	\cveventitem{Assignments and solutions in form of blog posts for better readability}
-	\cveventitem{Hosts course notes, curriculum, etc of AI majors}
+	\cveventitem{Hosts course notes, curriculum, etc of AI major}
 \end{itemize}
 \vspace{12pt}
 
@@ -509,7 +510,7 @@ Main works:
 \cvevent{Nov, 2018 - Present}{Member}{PyTorch Discuss Forum}{Since the day I started deep learning with PyTorch, I started reading topics around my questions and tried to answer questions that I was not familiar with which helped me to dive deeper into the framework, learn many of hacks and return the favor! At the time of writing, \emph{I've visited the forum for 851 days, 563 posted replies, 10000 read posts and 184 solutions (All-time 15th)}\\
 View the summary: \href{https://discuss.pytorch.org/u/nikronic/summary}{\underline{discuss.pytorch.org/u/nikronic/summary}}}
 \vspace{12pt}
-\vspace{12pt}
+\vspace{18pt}
 
 %-------------------------------------------------------------------------------------------------
 %	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
@@ -517,7 +518,7 @@ View the summary: \href{https://discuss.pytorch.org/u/nikronic/summary}{\underli
 
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{https://nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{https://github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
 
 
 %---------------------------------------------------------------------------------------
@@ -527,7 +528,7 @@ View the summary: \href{https://discuss.pytorch.org/u/nikronic/summary}{\underli
 
 %
 \cvevent{2016}{Paper Implementation}{Open Source}{Implementation of \emph{Using Genetic Algorithms for Multi-depot Vehicle Routing (Ombuki-Berman et al. 2009)} using Python as part of \emph{Computational Intelligence} course.\\
-You can find the source code here: \href{github.com/Nikronic/Optimized-MDVRP}{\underline{github.com/Nikronic/Optimized-MDVRP}}}
+You can find the source code here: \href{https://github.com/Nikronic/Optimized-MDVRP}{github.com/Nikronic/Optimized-MDVRP}}
 
 Main contributions:
 \begin{itemize}
@@ -541,7 +542,7 @@ Main contributions:
 
 %
 \cvevent{2018}{Paper Implementation}{Open Source}{Implementation of \emph{Deep Context-aware Descreening and Rescreening of Halftone Images (Kim, T.H et al. 2018)} using PyTorch. This was the my first project using PyTorch where I learned this framework.\\
-You can find the source code here: \href{github.com/Nikronic/Deep-Halftoning}{\underline{github.com/Nikronic/Deep-Halftoning}}}
+You can find the source code here: \href{https://github.com/Nikronic/Deep-Halftoning}{\underline{github.com/Nikronic/Deep-Halftoning}}}
 
 Main contributions:
 \begin{itemize}
@@ -550,10 +551,10 @@ Main contributions:
 	\cveventitem{The implementation can be divided into below separate projects:}
 	\begin{itemize}
 		\itemsep -0.2em
-		\cveventitem{\href{github.com/Nikronic/CoarseNet}{\underline{CoarseNet}}: Modified U-Net as a low-pass filter to remove halftone patterns}
-		\cveventitem{\href{github.com/Nikronic/DetailsNet}{\underline{DetailsNet}}: A CNN generator and two discriminators for adding details}
-		\cveventitem{\href{github.com/Nikronic/EdgeNet}{\underline{EdgeNet}}: A simple CNN to extract Canny edge features to preserve details}
-		\cveventitem{\href{github.com/Nikronic/Halftoning-Algorithms}{\underline{Halftoning Algorithms}}: Implementation of some of the halftone algorithms provided in most recent digital color halftoning books as ground truth}
+		\cveventitem{\href{https://github.com/Nikronic/CoarseNet}{\underline{CoarseNet}}: Modified U-Net as a low-pass filter to remove halftone patterns}
+		\cveventitem{\href{https://github.com/Nikronic/DetailsNet}{\underline{DetailsNet}}: A CNN generator and two discriminators for adding details}
+		\cveventitem{\href{https://github.com/Nikronic/EdgeNet}{\underline{EdgeNet}}: A simple CNN to extract Canny edge features to preserve details}
+		\cveventitem{\href{https://github.com/Nikronic/Halftoning-Algorithms}{\underline{Halftoning Algorithms}}: Implementation of some of the halftone algorithms provided in most recent digital color halftoning books as ground truth}
 	\end{itemize}
 \end{itemize}
 \vspace{12pt}
@@ -575,7 +576,7 @@ Main contributions:
 %---------------------------------------------------------------------------------------
 %	REFERENCES SECTION
 %--------------------------------------------------------------------------------------
-\cvsection{References}
+\cvsection{References}\\
 Available upon request.
 \vspace{12pt}
 
@@ -586,7 +587,7 @@ Available upon request.
 
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{https://nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{https://github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
 
 %============================================================================%
 %
