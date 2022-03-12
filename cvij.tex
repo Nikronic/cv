@@ -98,7 +98,7 @@
 
 %customize entries left, center and right
 \lhead{}
-\chead{\small{$\cdot$ ORCID: 0000-0001-9152-8094  $\cdot$  
+\chead{\small{$\cdot$  
 	\textcolor{sectcol}{\textbf{\href{mailto:nikan.doosti@outlook.com}{nikan.doosti@outlook.com}}}  $\cdot$ 
 	\textcolor{sectcol}{\textbf{\href{https://nikronic.github.io}{nikronic.github.io}}} $\cdot$
 	}}
@@ -234,8 +234,8 @@
 %
 \newcommand{\metasection}[2]
 {
-\begin{tabular*}{1\textwidth}{p{2.0cm} p{10cm}}
-\larrow{sectcol}	\normalsize{\textbf{#1}}&#2\\[12pt]
+\begin{tabular*}{1\textwidth}{p{2.0cm} p{14cm}}
+\larrow{sectcol}	\normalsize{\textbf{#1}}&#2\\[3pt]
 \end{tabular*}
 }
 
@@ -254,7 +254,7 @@
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \newcommand{\cvevent}[4]
 {
-	\vspace{8pt}
+	\vspace{2pt}
 
     \begin{tabular*}{1\textwidth}{P{4.6cm} P{5.7cm} P{6.6cm}}
         \textcolor{bgcol}{#1}& \textbf{#2} & 
@@ -265,7 +265,7 @@
 	\textcolor{softcol}{\hrule}
 	\vspace{6pt}
 	{#4}
-	\vspace{6pt}
+%	\vspace{0pt}
 }
 
 % creates a list with left-arrows for show-casing the works done in a "cvevent" command
@@ -317,51 +317,54 @@
 \vspace{-20.55pt}
 
 % use this for multiple words like working titles etc.
-%\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\hspace{46pt}\HUGE{\textcolor{white}{\textsc{Jan Küster}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \parbox[b]{5cm}{   \large{ \textcolor{white}{{IT Consultant}}}\\
+%\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\hspace{46pt}\HUGE{\textcolor{white}{\textsc{Nikan Doosti}} } \textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \parbox[b]{5cm}{   \large{ \textcolor{white}{{DL Engineer}}}\\
 % \large{ \textcolor{white}{{Resume}}}}
 %}}
 
 % use this for single words, e.g. CV or RESUME etc.
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Nikan Doosti}} }\textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{Resume}} } }}
+%\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Nikan Doosti}} }\textcolor{sectcol}{\rule[-1mm]{1mm}{0.9cm}} \HUGE{\textcolor{white}{\textsc{DL Engineer}} } }}
+
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\HUGE{\textcolor{white}{\textsc{Nikan Doosti}} }
+}}
 
 
 %----------------------------------------------------------------------------------------
 %	HEADER IMAGE
 %----------------------------------------------------------------------------------------
 
-\begin{figure}[H]
-\begin{flushright}
-	\includegraphics[width=0.2\linewidth]{qr-github.png}
-\end{flushright}
-\end{figure}
+%\begin{figure}[H]
+%\begin{flushright}
+%	\includegraphics[width=0.2\linewidth]{qr-github.png}
+%\end{flushright}
+%\end{figure}
 
 %---------------------------------------------------------------------------------------
 %	QR CODE (optional)
 %----------------------------------------------------------------------------------------
 %\vspace{-136pt}
-%\hspace{0.75\linewidth}
-%\includegraphics[width=103pt]{qrcode}
-%\normalsize
-%\vspace{88pt}
+\hspace{0.80\linewidth}
+\includegraphics[width=70pt]{qr-github.png}
+\normalsize
+\vspace{-55pt}
 
 %---------------------------------------------------------------------------------------
 %	META SECTION
 %----------------------------------------------------------------------------------------
 
-\vspace{-114pt}
+%\vspace{-114pt} % has to be added if you are using an image/qrcode
 
-\metasection{Status:}{M.Sc. Computer Engineering, Artificial Intelligence}
-\metasection{Tech:}{PyTorch, Python, Scipy/Numpy}
-\metasection{Fields:}{Deep Learning, Computational Fabrication, Visual Computing, Computer Graphics}
-\vspace{12pt}  % 6pt+12pt (from line space of metasection command)
+\metasection{Status:}{MSc, Deep Learning Engineer}
+\metasection{Tech:}{PyTorch, Python, Numpy, Scipy, SKlearn}
+\metasection{Fields:}{Deep Learning, Visual Computing, Computer Graphics}
+%\vspace{6pt}  % 6pt+12pt (from line space of metasection command)
 
 %---------------------------------------------------------------------------------------
 %	SUMMARAY (optional)
 %----------------------------------------------------------------------------------------
 
 \cvsection{Summary}\\
-I am a final-year master student in computer engineering at IUST focusing on \emph{applications of artificial intelligence in science}. Before that, I was mainly focused on computer vision particularly \emph{image processing} and applications of machine learning in technology.\\
-Generally \emph{I love to do interdisiplineary work} between AI and science and actualize \emph{digital twin}.\\[-2pt]
+I am a final-year master's student in computer engineering at IUST focusing on \emph{applications of artificial intelligence in science}. Furthermore, I was mainly focused on classic and deep computer vision particularly \emph{image processing} and applications of machine learning in technology.\\
+Generally \emph{I highly appreciate interdisiplineary work} between AI and science and actualize \emph{digital twin}.\\[-2pt]
 
 %============================================================================%
 %
@@ -374,98 +377,51 @@ Generally \emph{I love to do interdisiplineary work} between AI and science and 
 %----------------------------------------------------------------------------------------
 \cvsection{Experience}
 
-
-%\textcolor{softcol}{\hrule}
-
-%
 \cvevent{Jul, 2020 - Mar, 2021}{Research Assistant (Remote)}{Max Planck Institute for Informatics}{This was my first mutlidisciplinary work which led to publication of my first-ever academic paper at ACM Symposium on Computational Fabrication (SCF21)!}
 
-My responsibilities:
 \begin{itemize}
 	\itemsep -0.2em
-	\cveventitem{Studying numerical simulation concepts such as FEM for solving Topology Optimization (TO) problem}
-	\cveventitem{Studying and evaluating recent papers in implicit neural networks and solving PDEs using deep learning}
-	\cveventitem{Implementing and reproducing results of the main references}
-	\cveventitem{Developing a new system to solve TO in fully self-supervised manner via neural fields}
+	\cveventitem{Studying numerical simulation methods such as Finite Element Method (FEM) for solving Topology Optimization (TO) problem}
+	\cveventitem{Studying and reproducing recent papers in implicit neural representation, neural radiance fields, neural PDEs, and Fourier neural operators}
+	\cveventitem{Stuyding different projection(activation)/smoothing filters and their effect on optimization and mesh-based solutions}
+	\cveventitem{Developing a novel frequency aware model to solve TO in fully self-supervised manner via neural fields}
 \end{itemize}
-Supervisor: \href{https://aidam.mpi-inf.mpg.de/?view=people_vahid}{\underline{Dr. Vahid Babaei}} (Computational manufacturing researcher at Max Planck Institute for Informatics and group leader at \href{https://aidam.mpi-inf.mpg.de/?view=home}{\underline{AIDAM} group})
+Supervisor: \href{https://aidam.mpi-inf.mpg.de/?view=people_vahid}{\underline{Dr. Vahid Babaei}} (Computational manufacturing researcher at Max Planck Institute for Informatics and group leader at \href{https://aidam.mpi-inf.mpg.de/?view=home}{\underline{AIDAM}})
 \vspace{12pt}
 
 %
-\cvevent{Aug, 2016 - Jun, 2020}{Freelancer}{Independent}{To help with the expenses and also learn more, during my study in BSc and earlier stages of MSc, I was working as a freelancer partially.}
+\cvevent{Aug, 2016 - Jun, 2020}{Freelancer}{Independent}{To help with the expenses and learn more, during my study in BSc and earlier stages of MSc, I was working as a freelancer partially.}
 
-My responsibilities:
 \begin{itemize}
 	\itemsep -0.2em
-	\cveventitem{Writing small pieces of software for desktop computers mostly in C\#}
-	\cveventitem{Designing, consulting and implementing standard algorithms and data structures for designing efficient systems}
-	\cveventitem{Designing, consulting and implementing evolutionary algorithms such as genetics for developing efficient systems in different topics}
-	\cveventitem{Designing, consulting and implementing classical computer vision and deep learning based models for different topics from reading car plates, tracking speed of cars, counting objects and measuring surfaces.}
+	\cveventitem{Occasionally teaching university courses as a private tutor}
+	\cveventitem{Designing, participating and implementing evolutionary algorithms such as genetics for routing problem in university research projects}
+	\cveventitem{Designing, participating and implementing classical computer vision and deep learning based models for different topics from reading car plates, image classification, counting objects, etc.}
 \end{itemize}
-\vspace{12pt}
+%\vspace{12pt}
 
 
 
 %---------------------------------------------------------------------------------------
 %	PUBLICATION SECTION
 %--------------------------------------------------------------------------------------
-\cvsection{Publications}
-
+\cvsection{Publications and Talks}
+\\ % hardcoded: since it's not using \cveventitem right after \cvsection
+Publications:
 \begin{itemize}
 	\cveventitem{Doosti, Nikan, Julian Panetta, and Vahid Babaei. "Topology Optimization via Frequency Tuning of Neural Design Representations." In \emph{Symposium on Computational Fabrication}, pp. 1-9. 2021 (\href{https://dl.acm.org/doi/abs/10.1145/3485114.3485124}{\underline{Abstract/PDF})}}
 \end{itemize}
-\vspace{12pt}
-
+Invited Talks:
+\begin{itemize}
+	\cveventitem{Doosti, Nikan. 2022.  "Neural Design Representations." Toronto Geometry Colloquium. March 4, 2022. \href{https://toronto-geometry-colloquium.github.io/}{\underline{toronto-geometry-colloquium.github.io}}. (\href{https://youtu.be/FdPwG2kNv0M}{\underline{Video}}-\href{https://toronto-geometry-colloquium.github.io/posters/tgc_poster_035.pdf}{\underline{Poster}})}
+\end{itemize}
+%\vspace{12pt}
 
 
 %---------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %--------------------------------------------------------------------------------------
 \cvsection{Education}
-
-\cvevent{Aug, 2015 - Aug, 2019}{BSc Computer Engineering}{University of Guilan}{}
-
-Awards:
-\begin{itemize}
-	\itemsep -0.2em
-	\cveventitem{Full tuition fee waiver}
-	\cveventitem{Overall grade: 18.63/20}
-% end of page, use "artificial footer"
-
-%-------------------------------------------------------------------------------------------------
-%	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
-%--------------------------------------------------------------------------------------------------
-\null
-\vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{https://nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{https://github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
-
-
-% start of new page, end of "artificial footer" - cont. section education
-	\cveventitem{Ranked 3rd}
-	\cveventitem{Exceptional talent at Department of Computer Engineering}
-\end{itemize}
-
-Related coursework:
-\begin{itemize}
-	\itemsep -0.2em
-	\cveventitem{Algorithms and data structure}
-	\cveventitem{Artificial Intelligence and Computational Intelligence}
-	\cveventitem{Classical computer vision, statistical NLP}
-	\cveventitem{Signal and systems}
-	\cveventitem{Digital electronics and computer aided design (VHDL)}
-\end{itemize}
-
-Teacher assistant experience::
-\begin{itemize}
-	\itemsep -0.2em
-	\cveventitem{Advanced programming (Head TA), instructor: \emph{Dr. Mirroshandel}, Fall 2018}
-	\cveventitem{Algorithms, instructor: \emph{Dr. Shakeri}, Spring 2017}
-	\cveventitem{Algorithms (Head TA), instructor: \emph{Dr. Shakeri}, Fall 2018}
-	\cveventitem{Computational Intelligence (Head TA), instructor: \emph{Dr. Shakeri}, Spring 2018}
-\end{itemize}
-My primary responsibilities as the TA were assessing and designing assignments and teaching as the head TA.
-\vspace{12pt}
-
 
 %
 \cvevent{Aug, 2019 - Present}{MSc Computer Engineering}{Iran University of Sc. and Tech. (IUST)}{}
@@ -481,45 +437,26 @@ Thesis: Toward super-resolution neural topology optimization (in progress)\\
 Supervisor: \href{http://webpages.iust.ac.ir/mozayani/}{\underline{Dr. Nasser Mozayani}} (Associate professor of department of computer engineering)
 \vspace{12pt}
 
+\cvevent{Aug, 2015 - Aug, 2019}{BSc Computer Engineering}{University of Guilan}{}
 
-
-%---------------------------------------------------------------------------------------
-%	ACTIVITIES SECTION
-%--------------------------------------------------------------------------------------
-\cvsection{Voluntary Activities}
-
-%
-\cvevent{Oct, 2018 - Present}{Lecturer}{Rasht School of AI (\href{http://schoolofai.ir}{schoolofai.ir})}{School of AI is a community of passionate people about learning and teaching AI, mostly enabled by students from different fields of study. In this community, we would like to personalize learning paths and create a network to learn more about machine learning and deep learning and their applications. All sessions are free and recordings are available publicly.\\
-You can find the material here: \href{https://github.com/rasht-school-of-ai}{\underline{github.com/rasht-school-of-ai}}}
-\vspace{12pt}
-
-
-%
-\cvevent{Sep, 2020- Aug, 2021}{Maintainer and Developer}{IUST Projects (\href{http://iust-projects.ir}{iust-projects.ir})}{IUST Projects is an open GitHub organization with a focus on showcasing and maintaining projects created at Iran University of Science and Technology. This website and its \emph{organization is maintained by its true owners, the students} and the contributors outside of the university, so no, this is not an official university website and it is open to anybody who wants to join!\\
-You can find all the materials here: \href{https://github.com/iust-projects}{\underline{github.com/iust-projects}}}
-
-Main works:
+Awards:
 \begin{itemize}
 	\itemsep -0.2em
-	\cveventitem{Assignments and solutions in form of blog posts for better readability}
-	\cveventitem{Hosts course notes, curriculum, etc of AI major}
+	\cveventitem{Full tuition fee waiver}
+	\cveventitem{Overall grade: 18.63/20 (Ranked \textbf{3rd)}}
+	\cveventitem{Exceptional talent at Department of Computer Engineering}
 \end{itemize}
-\vspace{12pt}
 
-
-%
-\cvevent{Nov, 2018 - Present}{Member}{PyTorch Discuss Forum}{Since the day I started deep learning with PyTorch, I started reading topics around my questions and tried to answer questions that I was not familiar with which helped me to dive deeper into the framework, learn many of hacks and return the favor! At the time of writing, \emph{I've visited the forum for 851 days, 563 posted replies, 10000 read posts and 184 solutions (All-time 15th)}\\
-View the summary: \href{https://discuss.pytorch.org/u/nikronic/summary}{\underline{discuss.pytorch.org/u/nikronic/summary}}}
-\vspace{12pt}
-\vspace{18pt}
-
-%-------------------------------------------------------------------------------------------------
-%	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
-%--------------------------------------------------------------------------------------------------
-
-\null
-\vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{https://nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{https://github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
+Teacher assistant experience:
+\begin{itemize}
+	\itemsep -0.2em
+	\cveventitem{Advanced programming (Head TA), instructor: \emph{Dr. Mirroshandel}, Fall 2018}
+	\cveventitem{Algorithms, instructor: \emph{Dr. Shakeri}, Spring 2017}
+	\cveventitem{Algorithms (Head TA), instructor: \emph{Dr. Shakeri}, Fall 2018}
+	\cveventitem{Computational Intelligence (Head TA), instructor: \emph{Dr. Shakeri}, Spring 2018}
+\end{itemize}
+My primary responsibilities as the TA were assessing and designing assignments and teaching as the head TA.
+\vspace{6pt}  % for some reason spacing was not right -> hardcoded space
 
 
 %---------------------------------------------------------------------------------------
@@ -528,50 +465,50 @@ View the summary: \href{https://discuss.pytorch.org/u/nikronic/summary}{\underli
 \cvsection{Selected Projects}
 
 %
-\cvevent{2016}{Paper Implementation}{Open Source}{Implementation of \emph{Using Genetic Algorithms for Multi-depot Vehicle Routing (Ombuki-Berman et al. 2009)} using Python as part of \emph{Computational Intelligence} course.\\
-You can find the source code here: \href{https://github.com/Nikronic/Optimized-MDVRP}{\underline{github.com/Nikronic/Optimized-MDVRP}}}
-
-Main contributions:
-\begin{itemize}
-	\itemsep -0.2em
-	\cveventitem{Only open-source implementation with reproducablity}
-	\cveventitem{Improving mutation and replacement modules of Genetics optimizer}
-	\cveventitem{Outperforming the original paper}
-\end{itemize}
+\cvevent{2017}{Paper Implementation}{Open Source}{Sole open source implementation of \emph{Using Genetic Algorithms for Multi-depot Vehicle Routing (Ombuki-Berman et al. 2009)} via Python as part of \emph{Computational Intelligence} course. (\href{https://github.com/Nikronic/Optimized-MDVRP}{\underline{github.com/Nikronic/Optimized-MDVRP}})}
 \vspace{12pt}
 
 
 %
-\cvevent{2018}{Paper Implementation}{Open Source}{Implementation of \emph{Deep Context-aware Descreening and Rescreening of Halftone Images (Kim, T.H et al. 2018)} using PyTorch. This was the my first project using PyTorch where I learned this framework.\\
-You can find the source code here: \href{https://github.com/Nikronic/Deep-Halftoning}{\underline{github.com/Nikronic/Deep-Halftoning}}}
+\cvevent{2019}{Paper Implementation}{Open Source}{Sole open source implementation of \emph{Deep Context-aware Descreening and Rescreening of Halftone Images (Kim, T.H et al. 2018)} via PyTorch. This was the my first-ever PyTorch project.( \href{https://github.com/Nikronic/Deep-Halftoning}{\underline{github.com/Nikronic/Deep-Halftoning}})}
 
-Main contributions:
+
 \begin{itemize}
 	\itemsep -0.2em
-	\cveventitem{Only open source implementation}
-	\cveventitem{The implementation can be divided into below separate projects:}
-	\begin{itemize}
-		\itemsep -0.2em
-		\cveventitem{\href{https://github.com/Nikronic/CoarseNet}{\underline{CoarseNet}}: Modified U-Net as a low-pass filter to remove halftone patterns}
-		\cveventitem{\href{https://github.com/Nikronic/DetailsNet}{\underline{DetailsNet}}: A CNN generator and two discriminators for adding details}
-		\cveventitem{\href{https://github.com/Nikronic/EdgeNet}{\underline{EdgeNet}}: A simple CNN to extract Canny edge features to preserve details}
-		\cveventitem{\href{https://github.com/Nikronic/Halftoning-Algorithms}{\underline{Halftoning Algorithms}}: Implementation of some of the halftone algorithms provided in most recent digital color halftoning books as ground truth}
-	\end{itemize}
+	\cveventitem{\href{https://github.com/Nikronic/CoarseNet}{\underline{CoarseNet}}: Modified U-Net as a low-pass filter to remove halftone patterns}
+	\cveventitem{\href{https://github.com/Nikronic/DetailsNet}{\underline{DetailsNet}}: A GAN for improving details}
+	\cveventitem{\href{https://github.com/Nikronic/EdgeNet}{\underline{EdgeNet}}: A simple CNN to extract Canny edge features to preserve details}
+	\cveventitem{\href{https://github.com/Nikronic/Halftoning-Algorithms}{\underline{Halftoning Algorithms}}: Implementation of some of the halftone algorithms provided in digital color halftoning books as the ground truth}
 \end{itemize}
+
+
+%---------------------------------------------------------------------------------------
+%	ACTIVITIES SECTION
+%--------------------------------------------------------------------------------------
+\cvsection{Voluntary Activities}
+
+%
+\cvevent{Oct, 2018 - Present}{Lecturer}{Rasht School of AI (\href{http://schoolofai.ir}{schoolofai.ir})}{School of AI is a community of passionate people about learning and teaching AI, mostly enabled by students from different fields of study. In this community, we would like to personalize learning paths and create a network to learn more about machine learning and deep learning and their applications. All sessions are free and recordings are available publicly. (\href{https://github.com/rasht-school-of-ai}{\underline{github.com/rasht-school-of-ai}})}
 \vspace{12pt}
 
+%
+\cvevent{Sep, 2020- Aug, 2021}{Maintainer and Developer}{IUST Projects (\href{http://iust-projects.ir}{iust-projects.ir})}{IUST Projects is an open GitHub organization with a focus on showcasing and maintaining projects created at Iran University of Science and Technology. This \emph{organization is maintained by its true owners, the students of any institute}. This was an attempt to overcome the siloed culture of univeristy and show that everyone can be competitive and improve in a engagning and friendly environment. (\href{https://github.com/iust-projects}{\underline{github.com/iust-projects}})}\\
+Topics: Imbalance learning, ensembles, feature extraction, NN architectures, Hough transform, edge detection, shape fitting, Fourier/Cosine transform, geometrical/textural feature engineering, and \href{http://iust-projects.ir/categories.html#projects}{\underline{more}})
+\vspace{12pt}
 
+%
+\cvevent{Nov, 2018 - Present}{Member}{PyTorch Discuss Forum}{Since the day I started deep learning with PyTorch, I started reading topics around my questions and tried to answer questions that I was not familiar with which helped me to dive deeper into the framework, learn many of hacks and return the favor! At the time of writing, \emph{I've visited the forum for 851 days, 563 posted replies, 3000 read topics and 184 solutions (All-time 15th)}( \href{https://discuss.pytorch.org/u/nikronic/summary}{\underline{discuss.pytorch.org/u/nikronic/summary}})}
+\vspace{6pt} % for some reason spacing was not right -> hardcoded space
 
 %---------------------------------------------------------------------------------------
 %	LANGUAGE SECTION
 %--------------------------------------------------------------------------------------
 \cvsection{Languages}
-
 \begin{itemize}
-	\cveventitem{\makebox[6cm]{Persian/Farsi:\hfill} Native}
+	\itemsep -0.2em
+	\cveventitem{\makebox[6cm]{Persian:\hfill} Native}
 	\cveventitem{\makebox[6cm]{English:\hfill} Proficient}
 \end{itemize}
-\vspace{12pt}
 
 
 %---------------------------------------------------------------------------------------
@@ -579,16 +516,17 @@ Main contributions:
 %--------------------------------------------------------------------------------------
 \cvsection{References}\\
 Available upon request.
-\vspace{12pt}
 
 
 %-------------------------------------------------------------------------------------------------
 %	ARTIFICIAL FOOTER (fancy footer cannot exceed linewidth) 
 %--------------------------------------------------------------------------------------------------
 
+% START: forced break page
 \null
 \vspace*{\fill}
-\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{https://nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{https://github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 12.12.2021}}}
+\hspace{-0.25\linewidth}\colorbox{bgcol}{\makebox[1.5\linewidth][c]{\mystrut \small \textcolor{white}{\href{https://nikronic.github.io}{nikronic.github.io}} $\cdot$ \textcolor{white}{\href{https://github.com/Nikronic}{github.com/Nikronic}} $\cdot$ \textcolor{white}{updated: 11.3.2022}}}
+% END: forced break page
 
 %============================================================================%
 %
