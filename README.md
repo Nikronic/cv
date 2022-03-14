@@ -2,7 +2,7 @@
 Source code and updates to my CV in Latex to PDF
 
 ## Template
-The originial theme has been stolen from https://github.com/jankapunkt/latexcv (`modern` theme)
+The originial theme has been borrowed from https://github.com/jankapunkt/latexcv (`modern` theme)
 
 ## Versions [pdf/tex]
 This repo hosts different versions of the same CV for different purposes e.g. work in Iran, my public website, etc.
