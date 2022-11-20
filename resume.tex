@@ -5,7 +5,91 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\include{command.tex}
+% \include{command.tex}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\LinedItem}[1]{\item \begin{tabular}[t]{|p{10cm}}#1\end{tabular}}
+
+\newcommand{\resumeSubheading}[5]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ 
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{#5} & 
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingF}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ 
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\awarditem}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\ 
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\awarditemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\awarditemListEnd}{\end{itemize}\vspace{-5pt}}
+    
+
+
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -14,9 +98,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Nikan Doosti}}
-  Email : \href{nikan.doosti@outlook.com}{nikan.doosti@outlook.com}\\
-   & Mobile : +989379156599\\
+  \textbf{{\Large Nikan Doosti}} (Officially: Mohammad DoostiLakhani) &
+  Email: \href{nikan.doosti@outlook.com}{nikan.doosti@outlook.com}\\
+   & Mobile: +989379156599
 \end{tabular*}
 
 
@@ -28,17 +112,19 @@
    %  {Doctoral of Computer Science and Information Sciences}{Sep 2022 - present}
    \resumeSubheadingF
      {Iran University of Science and Technology}{Tehran, Iran}
-     {Master of Computer Engineering - Artificial Intelligence}{Sep 2016 - Sep 2019}
+     {Master of Computer Engineering - Artificial Intelligence}{Aug 2019 - Dec 2022}
       \resumeItemListStart
-      \resumeItem{\textbf{Thesis: }Toward High-Resolution Topology Optimization}
+        \resumeItem{\textbf{Thesis:} High Resolution Neural Topology Optimizaiton via Differentiable Physics Engine}
+        \resumeItem{\textbf{Defense:} Defended with Full mark on 22 Oct 2022}
+        \resumeItem{\textbf{GPA:} 17.17/20.00}
       \resumeItemListEnd
    \resumeSubheadingF
      {University of Guilan}{Rasht, Guilan}
-     {Bachelor of Computer Engineering}{Sep 2012 - Jul 2016}
+     {Bachelor of Computer Engineering}{Aug 2015 - Aug 2019}
      \resumeItemListStart
-      \resumeItem{\textbf{Final Project Title: } Deep Halftoning}
-      \resumeItem{\textbf{Class rank } 3}
-      \resumeItem{\textbf{GPA:} 18.64/20.00}
+        \resumeItem{\textbf{Final Project:} Rescreening of Halftone Images via Data-Driven Deep Learning Methods}
+        \resumeItem{\textbf{Class Rank:} 3}
+        \resumeItem{\textbf{GPA:} 18.64/20.00}
       \resumeItemListEnd
  \resumeSubHeadingListEnd
 
@@ -61,17 +147,17 @@
         \resumeItem{Measure release profile of dissolution process using novel capture system}
         \resumeItem{Evaluate method with real data experiments}
         \resumeItem{This project has been published and presented in ACM Symposium on Computational Fabrication 2021}
-        \resumeItem{This project was my master's thesis also}
-        
+        \resumeItem{This project was defined as my master's thesis}
       \resumeItemListEnd
+      
   \resumeSubHeadingListEnd
 
   \section{Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Full-time Machine Learning Engineer}{Karaj, Iran}
-    %   {\href{http://aidam.mpi-inf.mpg.de/?view=home}{Artificial Intelligence aided Design and Manufacturing Group, } 
-    %   }
+       {\href{http://aidam.mpi-inf.mpg.de/?view=home}{Artificial Intelligence aided Design and Manufacturing Group, } 
+       }
       {April 2022 - Present}{\href{https://nahalgasht.com/}{Nahal Gasht}}
      
       \resumeItemListStart
@@ -102,7 +188,7 @@
       {Algorithms Design} 
       {Feb 2017 - July 2017}{University of Guilan}
       \resumeItemListStart
-        \resumeItem{Supervision: \href{}{Dr. Mojtaba Shakeri}}
+        \resumeItem{Supervision: \href{https://www.linkedin.com/in/mojtaba-moe-shakeri-b34a2b6/}{Dr. Mojtaba Shakeri}}
         \resumeItem{Helped with grading of the assignments}
       \resumeItemListEnd
     
@@ -111,7 +197,7 @@
       {Algorithms Design} 
       {Aug 2018 - Feb 2019}{University of Guilan}
       \resumeItemListStart
-        \resumeItem{Supervision: \href{}{Dr. Mojtaba Shakeri}}
+        \resumeItem{Supervision: \href{https://www.linkedin.com/in/mojtaba-moe-shakeri-b34a2b6/}{Dr. Mojtaba Shakeri}}
         \resumeItem{Held QA sessions and graded the assignments}
       \resumeItemListEnd
 
@@ -120,7 +206,7 @@
       {Computational Intelligence} 
       {Feb 2018 - July 2018}{University of Guilan}
       \resumeItemListStart
-        \resumeItem{Supervision: \href{}{Dr. Mojtaba Shakeri}}
+        \resumeItem{Supervision: \href{https://www.linkedin.com/in/mojtaba-moe-shakeri-b34a2b6/}{Dr. Mojtaba Shakeri}}
         \resumeItem{Designed programming assignments}
         \resumeItem{Held QA sessions and graded all the assignments}
       \resumeItemListEnd
@@ -133,33 +219,33 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Mentor and Lecturer}{}
-    %   {Numerical Linear Algebra Matlab Course} 
-      {2018 - Present}{Rasht School of AI}
+      {An Open and Free Organization For Introducing AI and Mentorship} 
+      {2018 - Present}{\href{http://schoolofai.ir/}{Rasht School of AI}}
       \resumeItemListStart
-      \resumeItem{Held lectures around applications of digital image processing (\href{https://github.com/rasht-school-of-ai/Meetup-Materials}{Slides})}
-      \resumeItem{Mentored multiple students who were interested in artificial intelligence and its applications}
+        \resumeItem{Held lectures around applications of AI, particularly digital image processing (\href{https://github.com/rasht-school-of-ai/Meetup-Materials}{Slides})}
+        \resumeItem{Mentored few students who were interested in artificial intelligence and its applications}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
   \resumeSubHeadingListStart
     \resumeSubheading
       {Organizer and Mentor}{}
-    %   {Numerical Linear Algebra Matlab Course} 
-      {2019 - 2021}{Rasht School of AI}
+      {An Open and Free Organization For Sharing Ideas, Showcasing Projects and Mentoring Students} 
+      {2019 - 2021}{\href{http://iust-projects.ir/}{IUST Projects}}
       \resumeItemListStart
-      \resumeItem{Established an open learning and collabroation community among software engineeing and artificial intelligence sutdents (\href{http://iust-projects.ir/}{Website})}
-      \resumeItem{Attempted to challenge the siloed culture of the university through having open discussions}
-      \resumeItem{Mentored junior students in prepration for going through M.Sc thesis process}
+        \resumeItem{Attempted to challenge the siloed culture of the university through having open scientific/general discussions}
+        \resumeItem{Mentored junior students in prepration for going through M.Sc thesis process; from ideation to publishing}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
   \resumeSubHeadingListStart
     \resumeSubheading
       {Member}{}
-    %   {Numerical Linear Algebra Matlab Course} 
+      {Official forum with +50K members and authors of the PyTorch} 
       {2018 - Present}{{Official PyTorch Forum}}
       \resumeItemListStart
-      \resumeItem{Top member with 183 solutions and 566 posts}
+        \resumeItem{A top member (15th) with 183 solutions and 566 posts}
+        \resumeItem{Commended by \href{https://twitter.com/ThomasViehmann/status/1309794697049714689}{Thomas Viehmann} for insightful posts}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -185,7 +271,7 @@
 \section{Awards}
 \awarditemListStart
   \awarditem{Accepted in M.Sc program without Entrance Exam as an Exceptional Talent}{2019}
-  \awarditem{Ranked 1st among B.Sc graduates in Computer Engineering at University of Guilan}{2019}
+  \awarditem{Ranked 3rd among B.Sc graduates in Computer Engineering at University of Guilan}{2019}
   \awarditem{Tuition Waiver, B.Sc, University of Guilan}{2015}
   \awarditem{Tuition Waiver, M.Sc, Iran University of Science and Technology}{2019}
 \awarditemListEnd
@@ -194,6 +280,12 @@
 \section{Publications}
  \resumeSubHeadingListStart
    \resumeItem{\textbf{Doosti, Nikan}, Julian Panetta, and Vahid Babaei. "Topology Optimization via Frequency Tuning of Neural Design Representations." In Symposium on Computational Fabrication, pp. 1-9. 2021.}
+\resumeSubHeadingListEnd
+
+%--------TALKS------------------
+\section{Talks}
+ \resumeSubHeadingListStart
+   \resumeItem{Doosti, Nikan. 2022. "Neural Design Representations." Toronto Geometry Colloquium. March 4, 2022. toronto-geometry-colloquium.github.io. (\href{https://youtu.be/FdPwG2kNv0M}{Video} - \href{https://toronto-geometry-colloquium.github.io/posters/tgc_poster_035.pdf}{Poster})} 
 \resumeSubHeadingListEnd
 
 \end{document}
