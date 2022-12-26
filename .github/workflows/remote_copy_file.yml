@@ -34,7 +34,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: '../resume.pdf'
+          source_file: 'nikronic.com/resume.pdf'
           destination_repo: 'Nikronic/nikronic.github.io'
           destination_branch: 'master'
           destination_folder: 'assets/pdf'
