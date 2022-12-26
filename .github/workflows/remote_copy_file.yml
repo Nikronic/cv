@@ -23,12 +23,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         with:
-          path: main
+          path: nikronic.com
       # - name: remove old resume.pdf file
       #   run: rm assets/pdf/resume.pdf
       # for some reason that I don't care to find out, it needs a bit of time! :D
-      # - name: hang in there buddy
-      #   run: sleep 3m
+      - name: hang in there buddy
+        run: sleep 10
       - name: Push a file to another repository
         uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
         env:
