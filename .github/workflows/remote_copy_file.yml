@@ -24,6 +24,8 @@ jobs:
       - uses: actions/checkout@v2
         with:
           path: main
+      # - name: remove old resume.pdf file
+      #   run: rm assets/pdf/resume.pdf
       # for some reason that I don't care to find out, it needs a bit of time! :D
       # - name: hang in there buddy
       #   run: sleep 3m
@@ -35,7 +37,7 @@ jobs:
           source_file: 'resume.pdf'
           destination_repo: 'Nikronic/nikronic.github.io'
           destination_branch: 'master'
-          destination_folder: 'assets/pdf/resume.pdf'
+          destination_folder: 'assets/pdf/'
           user_email: 'nikan.doosti@outlook.com'
           user_name: 'Nikronic'
           commit_message: '[automated] triggered by *merge* event on `cv/nikronic.com` repo/branch'
