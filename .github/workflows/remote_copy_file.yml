@@ -25,10 +25,8 @@ jobs:
         with:
           path: main
       # for some reason that I don't care to find out, it needs a bit of time! :D
-      - name: hang in there buddy
-        run: sleep 3m
-      - name: change extension from html to yml for jekyll data type
-        run: mv _site/navigation/index.html _site/navigation/index.yml
+      # - name: hang in there buddy
+      #   run: sleep 3m
       - name: Push a file to another repository
         uses: dmnemec/copy_file_to_another_repo_action@v1.1.1
         env:
