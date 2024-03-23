@@ -1,0 +1,285 @@
+%-------------------------
+% Resume in Latex
+% Author : Nikan Doosti
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+% \include{command.tex}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\LinedItem}[1]{\item \begin{tabular}[t]{|p{10cm}}#1\end{tabular}}
+
+\newcommand{\resumeSubheading}[5]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ 
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{#5} & 
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadingF}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ 
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\awarditem}[2]{
+  \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\ 
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\awarditemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\awarditemListEnd}{\end{itemize}\vspace{-5pt}}
+    
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Nikan Doosti}} % (Legal Name: Mohammad DoostiLakhani) 
+  &
+  Email: \href{mailto:nikan.doosti@outlook.com}{nikan.doosti@outlook.com}\\
+   & Web: \href{https://www.nikronic.com/}{https://www.nikronic.com}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+ \resumeSubHeadingListStart
+   \resumeSubheadingF
+     {Iran University of Science and Technology}{Tehran, Iran}
+     {Master of Computer Engineering - Artificial Intelligence}{Aug 2019 - Dec 2022}
+      \resumeItemListStart
+        \resumeItem{\textbf{Thesis:} High Resolution Neural Topology Optimization via Differentiable Physics Engine}
+        \resumeItem{\textbf{Defense:} Defended with Full mark on 22 Oct 2022}
+        \resumeItem{\textbf{GPA:} 17.17/20.00}
+      \resumeItemListEnd
+   \resumeSubheadingF
+     {University of Guilan}{Rasht, Iran}
+     {Bachelor of Computer Engineering}{Aug 2015 - Aug 2019}
+     \resumeItemListStart
+        \resumeItem{\textbf{Final Project:} Descreening and Rescreening of Halftone Images via Data-Driven Deep Learning Methods}
+        \resumeItem{\textbf{Class Rank:} 3 out of 55}
+        \resumeItem{\textbf{GPA:} 18.64/20.00}
+      \resumeItemListEnd
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------WORK EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Full-time Data Engineering and Data Science Specialist}{Karaj, Iran}
+       {Specializing in Advanced AI Solutions for Business Optimization}
+      {April 2022 - December 2023}{\href{https://nahalgasht.com/}{Nahal Gasht}}
+     
+      % {I describe what I did for solving a problem at a company, and you should transform it into something suitable for a CV. Here is the description:
+      % 1. The problem: Tourism unlike its fun nature, has its own issues, particularly acquiring Visa. Now, we have tone of people interested in international tourism but not all can have satisfying application for a successful visa. Given huge number of calls (ignoring online platforms entirely) which is about 1000 calls per day, there was a huge overhead for the personnel to figure out whom they should prioritize as many of those calls had no or little chance of getting a visa. Also, we had limited personnel, and it was not possible to handle serious potential customers with high focus and low error in administration process without sacrificing more calls. This issue, resulted in huge costs, as a slightest error would have been fatal for the customer.
+      % 2. What I did: As an artificial intelligence specialist, I figured out, instead of overwhelming the expert personnel with low likelihood customers (which only could be figured out after many minutes of consulting, we can automate the entire screening process; from communication with the customer (a), over customer data acquisition (b), to prioritizing the application of the customer (c). 
+      % For step (a), a speech2text system would filter calls that have basic questions or had very weak application. Given that we had no labeled clean data, I decided that we better buy such service from third-party companies. Given the importance of privacy, I integrated an offline solution. Step (b) was more challenging as there were no solution at all available, hence I had to prepare our own data. Hence, I designed and implemented a full pipeline of automated data extraction, transformation, and preprocessing dealing with low/unlabeled data regime that reduced bad data by \%35. In the final step (c), a machine learning system (XGBoost) in combination with ExplainableAI was used to not only prioritize customers, but also explain the reason for each factor affecting the likelihood of each customer as it was necessary to communicate reasoning for such decision. 
+      % 3. The results: Through the success of this project, I managed to reduce the total error of personnel by \%10, preventing the company from losing around 5.5 times of my salary. Also, I have been awarded with "Most Zealous" and "The Jedi" for working hard and being an inspiring leader respectively, resulting in two promotions and \%70 (normalized by inflation - raw \%125) increase in salary within a year.}
+
+      \resumeItemListStart
+        \resumeItem{The Problem: \textbf{Implemented an AI-driven solution to address the challenge of prioritizing customers applications in the tourism sector.}}
+        \resumeItem{Impact: Decreased personnel error by 10\%, \textbf{mitigating potential losses equivalent to 5.5 times my annual salary.} Also, \textbf{awarded for dedication and leadership}, leading to two promotions and a 70\% salary increase within one year. Moreover, \textbf{I established myself as the primary resource for onboarding and training} new team members, receiving praise for my ability to simplify fundamental concepts.}
+        \resumeItem{Developed a comprehensive screening process automation from customer communication to application prioritization, filtering calls based on the complexity of inquiries, \textbf{reducing manual workload by 40\%.}}
+        \resumeItem{Oversaw the development of a proprietary data extraction and preprocessing pipeline, resulting in a \textbf{35\% reduction in poor-quality data}.}
+        \resumeItem{Deployed a machine learning model (XGBoost) coupled with Explainable AI techniques to prioritize applications and provide transparent reasoning for each decision.}
+        \resumeItem{This experience demonstrates my ability to leverage AI technologies to optimize decision-making processes, drive significant business outcomes, and collaborate effectively with stakeholders from various backgrounds.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------TEACHING EXPERIENCE-----------------
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Head Teaching Assistant}{}
+      {Advanced Programming} 
+      {Aug 2018 - Feb 2019}{University of Guilan}
+      \resumeItemListStart
+        \resumeItem{Supervision: \href{https://ir.linkedin.com/in/seyed-abolghasem-mirroshandel-1a3a5950}{Dr. Ghasem Mirroshandel}}
+        \resumeItem{Taught undergraduate students Java programming language in weekly 4-hour sessions}
+        \resumeItem{Designed and graded their assignments and the final project}
+      \resumeItemListEnd
+
+    % taking too much space and it is not even comparable to what I did in other TAs
+    % I have not even included Advanced programming and data structure helps 
+
+    % \resumeSubheading
+    %   {Teaching Assistant}{}
+    %   {Algorithms Design} 
+    %   {Feb 2017 - July 2017}{University of Guilan}
+    %   \resumeItemListStart
+    %     \resumeItem{Supervision: \href{https://www.linkedin.com/in/mojtaba-moe-shakeri-b34a2b6/}{Dr. Mojtaba Shakeri}}
+    %     \resumeItem{Helped with grading of the assignments}
+    %   \resumeItemListEnd
+    
+    \resumeSubheading
+      {Head Teaching Assistant}{}
+      {Algorithms Design} 
+      {Aug 2018 - Feb 2019}{University of Guilan}
+      \resumeItemListStart
+        \resumeItem{Supervision: \href{https://www.linkedin.com/in/mojtaba-moe-shakeri-b34a2b6/}{Dr. Mojtaba Shakeri}}
+        \resumeItem{Held weekly 2-hour QA sessions and graded the assignments}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Head Teaching Assistant}{}
+      {Computational Intelligence} 
+      {Feb 2018 - July 2018}{University of Guilan}
+      \resumeItemListStart
+        \resumeItem{Supervision: \href{https://www.linkedin.com/in/mojtaba-moe-shakeri-b34a2b6/}{Dr. Mojtaba Shakeri}}
+        \resumeItem{Designed programming assignments}
+        \resumeItem{Held weekly 2-hour QA sessions and graded all the assignments}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%--------Publications------------------
+\section{Publications}
+ \resumeSubHeadingListStart
+   \resumeItem{\textbf{Doosti, Nikan}, Julian Panetta, and Vahid Babaei. "Topology Optimization via Frequency Tuning of Neural Design Representations." In \textbf{Symposium on Computational Fabrication}, pp. 1-9. 2021. (\href{https://dl.acm.org/doi/abs/10.1145/3485114.3485124}{ACM})}
+\resumeSubHeadingListEnd
+%-------------------------------------------
+
+%--------TALKS------------------
+\section{Talks}
+ \resumeSubHeadingListStart
+   \resumeItem{"Neural Design Representations." \textbf{Toronto Geometry Colloquium Advised by Alec Jacobson} - University of Toronto. March 4, 2022. toronto-geometry-colloquium.github.io. (Length: 10 mins., \href{https://youtu.be/FdPwG2kNv0M}{Video})} 
+\resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------RESEARCH EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Assistant (remote)}{Saarbr{\"u}cken, Germany}
+      {\href{http://aidam.mpi-inf.mpg.de/?view=home}{Artificial Intelligence aided Design and Manufacturing Group} 
+      }{Jul 2020 - Mar 2021}{Max Planck Institute for Informatics}
+     
+      \resumeItemListStart
+        \resumeItem{Novel self-supevised neural method for obtaining the optimum design showcased in Topology Optimization}
+        \resumeItem{Under Supervision of \href{http://aidam.mpi-inf.mpg.de/?view=people_vahid} {\textbf{Dr. Vahid Babaei}} and with Collaboration of \href{https://www.julianpanetta.com/}{\textbf{Prof. Julian Panetta}} at University of California, Davis, USA.}
+        % \resumeItem{Collaboration of \href{https://www.julianpanetta.com/}{\textbf{Prof. Julian Panetta}} at University of California, Davis, USA.}
+        \resumeItem{Physics-based simulation of stiffness of the obtained design}
+        \resumeItem{Generative continuous design via a single fixed mesh through controlling the frequencies}
+        \resumeItem{This project which was defined as my master's thesis, has been published and presented in ACM Symposium on Computational Fabrication 2021}
+        % \resumeItem{This project was defined as my master's thesis}
+        \resumeItem{I spent 1500+ hours until the submission of concluding paper}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------VOLUNTARY ACTIVITIES-----------------
+\section{Voluntary Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mentor and Lecturer}{}
+      {An Open and Free Organization For Introducing AI and Mentorship} 
+      {2018 - 2021}{\href{http://schoolofai.ir/}{Rasht School of AI}}
+      \resumeItemListStart
+        \resumeItem{Held lectures around applications of AI, particularly digital image processing (\href{https://github.com/rasht-school-of-ai/Meetup-Materials}{Slides})}
+        \resumeItem{Mentored a few students who were interested in artificial intelligence and its applications}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Organizer and Mentor}{}
+      {An Open and Free Organization For Sharing Ideas, Showcasing Projects, and Mentoring Students} 
+      {2019 - 2021}{\href{http://iust-projects.ir/}{IUST Projects}}
+      \resumeItemListStart
+        \resumeItem{Attempted to challenge the university's siloed culture through open scientific/general discussions}
+        \resumeItem{Mentored junior students in preparation for going through the M.Sc thesis process, from ideation to publishing}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Member}{}
+      {Official forum with +50K members and authors of the PyTorch} 
+      {2018 - 2022}{{Official PyTorch Forum}}
+      \resumeItemListStart
+        \resumeItem{A top member (15th) with 183 solutions and 566 posts (\href{https://discuss.pytorch.org/u/Nikronic/}{summary})}
+        \resumeItem{Commended by \href{https://twitter.com/ThomasViehmann/status/1309794697049714689}{Thomas Viehmann} for insightful posts}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%---------Awards-----------------------
+\section{Awards}
+\awarditemListStart
+  \awarditem{Awarded for dedication and leadership at Nahal Gasht}{2023}
+  \awarditem{Accepted in M.Sc program without Entrance Exam as an Exceptional Talent}{2019}
+  \awarditem{Tuition Waiver, M.Sc, Iran University of Science and Technology}{2019}
+  \awarditem{Ranked 3rd among B.Sc graduates in Computer Engineering at the University of Guilan}{2019}
+  \awarditem{Tuition Waiver, B.Sc, University of Guilan}{2015}
+\awarditemListEnd
+%-------------------------------------------
+
+\end{document}
