@@ -5,3 +5,5 @@
 *.out
 *.xdv
 *.synctex.gz
+*.bbl
+*.blg
