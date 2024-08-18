@@ -17,6 +17,8 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{array}
+\usepackage{graphicx}
+\usepackage{wrapfig}
 
 
 \pagestyle{fancy}
@@ -98,14 +100,17 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{{\Large Nikan Doosti}} % (Legal Name: Mohammad DoostiLakhani) 
-  &
-  Email: \href{mailto:nikan.doosti@outlook.com}{nikan.doosti@outlook.com}\\
-   & Web: \href{https://www.nikronic.com/}{https://www.nikronic.com}
-\end{tabular*}
+\begin{wrapfigure}{r}{2.2cm} % 'r' for right-align, and 3cm is the width of the image box
+  \vspace{-\baselineskip} % Move the image up a bit to align with the top of the text
+  \includegraphics[width=2.2cm, height=2.2cm]{qrcode.png}
+\end{wrapfigure}
 
+\textbf{{\Large Nikan Doosti}} \\
+Email: \href{mailto:nikan.doosti@outlook.com}{nikan.doosti@outlook.com}\\
+Homepage: \href{https://nikronic.com/}{https://nikronic.com}
+% ----------------------------------
 
+\hspace{0cm} % fix the hbox overfull caused by qrcode adition
 %-----------EDUCATION-----------------
 \section{Education}
  \resumeSubHeadingListStart
