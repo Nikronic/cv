@@ -5,12 +5,19 @@
         "Descreening",
         "Doosti",
         "Guilan",
+        "IUST",
         "Lakhani",
         "Mojtaba",
         "Nikan",
+        "Panafor",
         "Panetta",
         "Rescreening",
         "Shakeri",
+        "Slurm",
         "Vahid"
+    ],
+    "cSpell.ignoreWords": [
+        "Saarbr",
+        "cken"
     ]
 }
