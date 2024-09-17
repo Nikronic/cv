@@ -22,8 +22,12 @@
 
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+% \fancyfoot{}
+\fancyhf{}  % Clear default settings
+\fancyfoot[R]{\small \emph{Nikan Doosti} \hspace{1em} \thepage}
+\setlength{\footskip}{26pt}  % Adjusts the distance between text and footer
+\fancyhfoffset[R]{0.5cm}  % Pushes the footer content further to the right
+
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
