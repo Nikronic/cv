@@ -174,64 +174,7 @@ Github: \href{https://github.com/Nikronic}{https://github.com/Nikronic}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 %-------------------------------------------
-  
-%-----------WORK EXPERIENCE-----------------
-\section{Work Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Self-Funded AI Venture}{Tehran, Iran}
-       {\textbf{Founder and Engineer}}
-      {Mar 2024 - Jul 2024}{Specializing in Automated Document Image Analysis}
-      % https://arxiv.org/abs/2103.15348 => start of research for this idea
-      % how I came up with the idea: when I was working as a ML specialist, I did some manual tasks of preparing data, until later they recruited a data engineer. I noticed that not all companies (especially those without IT department) are interested in revising their data pipeline, and would rather have a software-service that does that for them even proportionately. This is particularly true for developing countries where the culture of having structured data or following global standardized methods is not common at all. Also, usually in these countries the bureaucracy is massive and hence such facilitating tool could become beneficial. So I concluded that I can close the gap between the lack of having standard data pipeline and business orchestration by developing an automated document image analysis platform with no-code/low-code configuration that makes internal or external transition from unstructured denormalized documents into a more accessible and structured data, more viable. 
-      % the story: many small to medium companies do not follow a structured and standard layout for their documents, hence interacting directly with other businesses (which have the same issues), make is challenging. On top of that, the variety of layouts both for internal and external interaction adds to this complexity. To resolve this challenges, many domain experts in various departments have to manually go through all these documents and use manual labor to convert each document to a format suitable for their department or overall their company when it comes from outside.
-      % this massively slows down the process, wastes resources, and also cause dissatisfaction and damages if not gone through intensive manual review.
-      % technical details: 1) automatically detect any structure of typed document 2) no-code/low-code configuration, such as categorization, validation against business logic, and review step-by-step via human-in-the-loop view in mind 3) integration into secondary tasks including CRM, BI Dashboards, etc.
-      % failures: Unfortunately I failed due to the following reasons:
-      % failure01: technology cannot change a standing culture is it is an incrementation (optimization of the current process) and not a new way (revolutionary). In my region, standardizing data hence data engineering is not appreciated.
-      % failure02: one might think a good globally accepted solutions can be integrated, and built upon, but the gap is not just one implementation away. it is exponential in form of layers. If previous layer of technology doesn't exist, it is not C(L)+C(L-1), it is C(L)+C(L-1)^y.
-      % failure03: governmental invasive regulations: well regulation is against innovation. I even had to pay 3x more for servers and crypto for VPN stuff to just only test my solution on cloud before getting filtered.
-      % failure04: I analyzed that offices with large bureaucracy (which in a lot in my country - we are worse than Germany by far), could benefit the most. What I didn't consider was the extreme length of corruption. So practically it is preferred to have long manual processes than money saving automated one, for two reasons: 1. getting a higher budget for manual workload 2. prevention of transparency which allows easier manipulation. (e.g., there are part of the government that if you lose a paper, all data is lost) 
 
-      % I converted some of the challenges into opportunities:
-      % for instance, in case of accuracy, either we had to be 100% accurate, or the solution was undesirable. So what I did was that I made the process and the tech in a way that every step can be audited by an expert, hence making even lower accuracy solution "desirable" (now the experts only look at the flow if there are doubts.)
-      \resumeItemListStart
-        \resumeItem{The problem: Many small to medium companies, especially in developing countries, \textbf{lack structured data pipelines, hindering efficient business operations} and inter-company interactions.}
-        \resumeItem{Developed an automated document image analysis platform to \textbf{transform unstructured, denormalized documents into accessible, structured data.}}
-        \resumeItem{Created a \textbf{no-code/low-code configuration system} for easy customization and business logic validation}
-        \resumeItem{Integrated a \textbf{human-in-the-loop review process} for quality control and compliance}
-        \resumeItem{Outcome and Insights: While the venture \textbf{did not achieve commercial success}, it provided valuable learnings: 
-          \begin{itemize}
-            \item Impact of \textbf{infrastructural inertia} toward data standardization
-            \item Complexities of \textbf{localization} of global tech solutions
-            \item Effects of \textbf{regulatory environments} on innovation
-            \item \textbf{Bureaucratic preferences} for transparency prevention in process management
-          \end{itemize}
-        }
-      \resumeItemListEnd
-    
-    \resumeSubheading
-      {Panafor}{Karaj, Iran}
-       {\textbf{Full-time Machine Learning Specialist}}
-      {Apr 2022 - Jan 2024}{Specializing in Data-driven Decision Making for Business Optimization}
-     
-      % {Here is the description:
-      % 1. The problem: Tourism unlike its fun nature, has its own issues, particularly acquiring Visa. Now, we have tone of people interested in international tourism but not all can have satisfying application for a successful visa. Given huge number of calls (ignoring online platforms entirely) which is about 1000 calls per day, there was a huge overhead for the personnel to figure out whom they should prioritize as many of those calls had no or little chance of getting a visa. Also, we had limited personnel, and it was not possible to handle serious potential customers with high focus and low error in administration process without sacrificing more calls. This issue, resulted in huge costs, as a slightest error would have been fatal for the customer.
-      % 2. What I did: As an artificial intelligence specialist, I figured out, instead of overwhelming the expert personnel with low likelihood customers (which only could be figured out after many minutes of consulting, we can automate the entire screening process; from communication with the customer (a), over customer data acquisition (b), to prioritizing the application of the customer (c). 
-      % For step (a), a speech2text system would filter calls that have basic questions or had very weak application. Given that we had no labeled clean data, I decided that we better buy such service from third-party companies. Given the importance of privacy, I integrated an offline solution. Step (b) was more challenging as there were no solution at all available, hence I had to prepare our own data. Hence, I designed and implemented a full pipeline of automated data extraction, transformation, and preprocessing dealing with low/unlabeled data regime that reduced bad data by \%35. In the final step (c), a machine learning system (XGBoost) in combination with ExplainableAI was used to not only prioritize customers, but also explain the reason for each factor affecting the likelihood of each customer as it was necessary to communicate reasoning for such decision. 
-      % 3. The results: Through the success of this project, I managed to reduce the total error of personnel by \%10, preventing the company from losing around 5.5 times of my salary. Also, I have been awarded with "Most Zealous" and "The Jedi" for working hard and being an inspiring leader respectively, resulting in two promotions and \%70 (normalized by inflation - raw \%125) increase in salary within a year.}
-
-      \resumeItemListStart
-        \resumeItem{The Problem: Developed and implemented a \textbf{Data-driven AI solution} that optimized resource allocation by \textbf{prioritizing high-potential customer profiles}, significantly \textbf{reducing operational overhead and minimizing errors} in processing critical applications.}
-        \resumeItem{Impact: Decreased personnel error by 10\%, \textbf{mitigating potential losses equivalent to 5.5 times my annual salary.} Also, \textbf{awarded for dedication and leadership}, leading to two promotions and a 70\% salary increase within one year. Moreover, \textbf{I established myself as the primary resource for onboarding and training} new team members, receiving praise for my \textbf{ability to simplify fundamental concepts}.}
-        \resumeItem{Developed a \textbf{comprehensive screening process automation} from customer communication to profiles prioritization, filtering calls based on the complexity of inquiries, \textbf{reducing manual workload by 40\%.}}
-        \resumeItem{Oversaw the development of a proprietary data extraction and preprocessing pipeline, resulting in a \textbf{35\% reduction in poor-quality data}.}
-        \resumeItem{Deployed \textbf{classical machine learning} models alongside \textbf{deep learning} methods, coupled with \textbf{explainable AI} techniques to prioritize profiles and provide transparent reasoning for each decision.}
-        \resumeItem{Exhibited \textbf{proactive problem-solving} by \textbf{manually preparing years of "analog data" within the first 2.5 months}, a critical task which I prioritize over my role-specific duties to ensure project success.}
-        \resumeItem{\textbf{Managed a 15,000-line codebase}, ensuring maintainability and performance. \textbf{Designed 7 modules, with 3 adopted by other projects}, enhancing reusability and impact.}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
-%-------------------------------------------
 
 %-----------TEACHING EXPERIENCE-----------------
 \section{Teaching Experience}
@@ -320,11 +263,71 @@ Github: \href{https://github.com/Nikronic}{https://github.com/Nikronic}
 \resumeSubHeadingListEnd
 %-------------------------------------------
 
+%-----------WORK EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Self-Funded AI Venture}{Tehran, Iran}
+       {\textbf{Founder and Engineer}}
+      {Mar 2024 - Jul 2024}{Specializing in Automated Document Image Analysis}
+      % https://arxiv.org/abs/2103.15348 => start of research for this idea
+      % how I came up with the idea: when I was working as a ML specialist, I did some manual tasks of preparing data, until later they recruited a data engineer. I noticed that not all companies (especially those without IT department) are interested in revising their data pipeline, and would rather have a software-service that does that for them even proportionately. This is particularly true for developing countries where the culture of having structured data or following global standardized methods is not common at all. Also, usually in these countries the bureaucracy is massive and hence such facilitating tool could become beneficial. So I concluded that I can close the gap between the lack of having standard data pipeline and business orchestration by developing an automated document image analysis platform with no-code/low-code configuration that makes internal or external transition from unstructured denormalized documents into a more accessible and structured data, more viable. 
+      % the story: many small to medium companies do not follow a structured and standard layout for their documents, hence interacting directly with other businesses (which have the same issues), make is challenging. On top of that, the variety of layouts both for internal and external interaction adds to this complexity. To resolve this challenges, many domain experts in various departments have to manually go through all these documents and use manual labor to convert each document to a format suitable for their department or overall their company when it comes from outside.
+      % this massively slows down the process, wastes resources, and also cause dissatisfaction and damages if not gone through intensive manual review.
+      % technical details: 1) automatically detect any structure of typed document 2) no-code/low-code configuration, such as categorization, validation against business logic, and review step-by-step via human-in-the-loop view in mind 3) integration into secondary tasks including CRM, BI Dashboards, etc.
+      % failures: Unfortunately I failed due to the following reasons:
+      % failure01: technology cannot change a standing culture is it is an incrementation (optimization of the current process) and not a new way (revolutionary). In my region, standardizing data hence data engineering is not appreciated.
+      % failure02: one might think a good globally accepted solutions can be integrated, and built upon, but the gap is not just one implementation away. it is exponential in form of layers. If previous layer of technology doesn't exist, it is not C(L)+C(L-1), it is C(L)+C(L-1)^y.
+      % failure03: governmental invasive regulations: well regulation is against innovation. I even had to pay 3x more for servers and crypto for VPN stuff to just only test my solution on cloud before getting filtered.
+      % failure04: I analyzed that offices with large bureaucracy (which in a lot in my country - we are worse than Germany by far), could benefit the most. What I didn't consider was the extreme length of corruption. So practically it is preferred to have long manual processes than money saving automated one, for two reasons: 1. getting a higher budget for manual workload 2. prevention of transparency which allows easier manipulation. (e.g., there are part of the government that if you lose a paper, all data is lost) 
+
+      % I converted some of the challenges into opportunities:
+      % for instance, in case of accuracy, either we had to be 100% accurate, or the solution was undesirable. So what I did was that I made the process and the tech in a way that every step can be audited by an expert, hence making even lower accuracy solution "desirable" (now the experts only look at the flow if there are doubts.)
+      \resumeItemListStart
+        \resumeItem{The problem: Many small to medium companies, \textbf{lack structured data pipelines} and use local layout for their documents which degrades inter-company interactions.}
+        \resumeItem{Developed an automated document image analysis platform to \textbf{transform unstructured, denormalized documents into accessible, structured data}, semantically searchable.}
+        \resumeItem{Created a \textbf{no-code/low-code configuration system} for easy customization and business logic validation}
+        % \resumeItem{Integrated a \textbf{human-in-the-loop review process} for quality control and compliance}
+        \resumeItem{Outcome and Insights: While the venture \textbf{did not achieve commercial success}, it provided valuable learnings: 
+          \begin{itemize}
+            \item Impact of \textbf{infrastructural inertia} toward data standardization
+            % \item Complexities of \textbf{localization} of global tech solutions
+            \item Effects of \textbf{regulatory environments} on innovation
+            \item \textbf{Bureaucratic preferences} for transparency prevention in process management
+          \end{itemize}
+        }
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Panafor}{Karaj, Iran}
+       {\textbf{Full-time Machine Learning Researcher}}
+      {Apr 2022 - Jan 2024}{Specializing in Data-driven Decision Making for Business Optimization}
+     
+      % {Here is the description:
+      % 1. The problem: Tourism unlike its fun nature, has its own issues, particularly acquiring Visa. Now, we have tone of people interested in international tourism but not all can have satisfying application for a successful visa. Given huge number of calls (ignoring online platforms entirely) which is about 1000 calls per day, there was a huge overhead for the personnel to figure out whom they should prioritize as many of those calls had no or little chance of getting a visa. Also, we had limited personnel, and it was not possible to handle serious potential customers with high focus and low error in administration process without sacrificing more calls. This issue, resulted in huge costs, as a slightest error would have been fatal for the customer.
+      % 2. What I did: As an artificial intelligence specialist, I figured out, instead of overwhelming the expert personnel with low likelihood customers (which only could be figured out after many minutes of consulting, we can automate the entire screening process; from communication with the customer (a), over customer data acquisition (b), to prioritizing the application of the customer (c). 
+      % For step (a), a speech2text system would filter calls that have basic questions or had very weak application. Given that we had no labeled clean data, I decided that we better buy such service from third-party companies. Given the importance of privacy, I integrated an offline solution. Step (b) was more challenging as there were no solution at all available, hence I had to prepare our own data. Hence, I designed and implemented a full pipeline of automated data extraction, transformation, and preprocessing dealing with low/unlabeled data regime that reduced bad data by \%35. In the final step (c), a machine learning system (XGBoost) in combination with ExplainableAI was used to not only prioritize customers, but also explain the reason for each factor affecting the likelihood of each customer as it was necessary to communicate reasoning for such decision. 
+      % 3. The results: Through the success of this project, I managed to reduce the total error of personnel by \%10, preventing the company from losing around 5.5 times of my salary. Also, I have been awarded with "Most Zealous" and "The Jedi" for working hard and being an inspiring leader respectively, resulting in two promotions and \%70 (normalized by inflation - raw \%125) increase in salary within a year.}
+
+      \resumeItemListStart
+        \resumeItem{The Problem: When number of customers increases, assigning experts to each customers becomes critical as only a few result in a contract. So, an "operator" that can monitor all customers simultaneously in real-time, to find high-value customers, and the assignment of experts to them based on the fitness, would prevent wasted effort.}
+        % \resumeItem{The Solution: Developed and implemented a \textbf{Data-driven AI solution} that optimized resource allocation by \textbf{prioritizing high-potential customer profiles}, significantly \textbf{reducing operational overhead and minimizing errors} in processing critical applications.}
+        \resumeItem{The Solution: 1. Screening customer input (text, voice call), 2. Finding potential via tabular machine learning methods, 3. Reporting potential and fitness to expert to human domain expert via explainableAI, 4. Experts are only engaged with the most=likely customers.}
+        \resumeItem{Impact: Decreased personnel error by 10\%, and I established myself as \textbf{the primary person for onboarding and training} new team members.}
+        \resumeItem{Developed a \textbf{comprehensive screening process automation} from customer communication to profiles prioritization, filtering calls based on the complexity of inquiries, \textbf{reducing manual workload by 40\%.}}
+        \resumeItem{Oversaw the development of a proprietary data extraction and preprocessing pipeline, resulting in a \textbf{35\% reduction in poor-quality data}.}
+        \resumeItem{Deployed \textbf{classical machine learning} models alongside \textbf{deep learning} methods, coupled with \textbf{explainable AI} techniques to prioritize profiles and provide transparent reasoning for each decision.}
+        \resumeItem{Exhibited \textbf{proactive problem-solving} by \textbf{manually preparing years of "analog data" within the first 2.5 months}, a critical task which I prioritize over my role-specific duties to ensure project success.}
+        \resumeItem{\textbf{Managed a 15,000-line codebase}, ensuring maintainability and performance. \textbf{Designed 7 modules, with 3 adopted by other projects}, enhancing reusability and impact.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
 %--------Technical Skills------------
 \section{Technical Skills}
   \begin{tabular}{>{\raggedright}p{4cm} @{\hskip 1cm} p{13cm}}
     Deeply Involved: & Python, PyTorch, Tensorflow, Git, Windows, Linux/Debian, MLFlow, DVC, ExplainableAI, Sphinx Doc, "why you should care" \\[0.6cm]
-    Have Experience With: & Docker, CI/CD, Slurm, PostgreSQL, FastAPI, Shell Scripting, HTML/CSS
+    Have Experience With: & Docker, DevOps, CI/CD, Slurm, PostgreSQL, FastAPI, Shell Scripting, HTML/CSS
   \end{tabular}
 
 % explanation for "why you should care": Skepticism vs Pessimism => I only resort to choosing a method based on evidence; samples, analysis or experts heuristics. This particularly makes me prune to hype-based decision making, which is particularly dominant in AI industry. So, I believe this positive skepticism which is not being pessimistic, is very important as it massively prevents unnecessary costs. And the reason I put it technical skills is that I practically use for for all levels of decision making, from writing a variable name when I code, or choosing the design of a system. So far, the fact that I demoed why AI won't work for many businesses, even though I could get paid a lot, I think is my best usage of this skill which have said probably hundred thousands of dollars.
